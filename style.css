@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    color: var(--Dark-green, #084236);
+    font-family: 'Poppins';
+}
+
+/*---------menu lateral------------*/
+.menu-lateral{
+    display: grid;
+    align-content: space-between;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 78px;
+    height: 100vh;
+    flex-shrink: 0;
+    background: var(--Green, #18C29C);
+}
+
+/*----------logo + menu Hamburguer-----------*/
+
+.menu-lateral .cx-superior{
+    display: flex;
+    margin: 24px 14px 26px 29px;
+}
+
+.logo{
+    display: flex;
+    opacity: 0;
+    margin-left: 70px;
+    transition: 0.2;
+}
+
+.btn-expandir{
+    margin-left: -140px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.2;
+}
+
+/*-----------busca------------*/
+ul li{
+    list-style: none;
+} 
+
+.item-menu-busca > a{
+    text-decoration: none;
+    display: flex;
+    margin: 14px;
+    line-height: 50px;
+}
+
+.item-menu-busca{
+    margin-left: 14px;
+    transition: 0.2s;
+    width: 51px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Light-green, #8ED7C6);
+    line-height: 50px; 
+}
+
+.item-menu-busca svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin: 13px 13px 0px 0px;
+}
+
+.texto-busca{
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/*---------restante itens menu----------*/
+.item-menu > a{
+    text-decoration: none;
+    display: flex;
+    margin: 14px;
+    line-height: 50px;
+}
+
+.item-menu{
+    margin-left: 14px;
+    width: 222px;
+    height: 50.917px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    line-height: 50px; 
+}
+
+.item-menu svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin: 13px 13px 0px 0px;
+}
+
+.texto{
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/*---------pessoa-----------*/
+.cx-pessoa{
+    width: 251px;
+    height: 60px;
+    flex-shrink: 0;
+    background: var(--Light-green, #8ED7C6);
+    display: flex;
+}
+
+.cx-pessoa img{
+    margin: 8px 9px 8px 13px;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.pessoa{
+    display: flex;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.cx-pessoa .pessoa p:nth-child(1){
+    margin-top: 12px;
+    margin-bottom: -5px;
+    color: var(--Dark-green, #084236);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.cx-pessoa .pessoa p:nth-child(2){
+    color: var(--Dark-green, #084236);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.cx-pessoa .sair{
+    margin: 18px 14px 18px -138px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    transition: 0.2s;
+}
+
+/*--------------side aberto------------*/
+/*expandir side*/
+.menu-lateral.expandir{
+    width: 250px;
+    transition: 0.2s;
+}
+
+/*texto side aberta*/
+.texto.expandir-texto{
+    color: var(--Dark-green, #084236); 
+    opacity: 1;
+    transition: 0.2s; 
+}
+
+/*busca side aberta*/
+/*logo*/
+
+
+/*div busca*/
+.item-menu-busca.expandir-texto{
+    transition: 0.2s; 
+    margin-left: 14px;
+    width: 222px;
+    height: 50.917px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    line-height: 50px; 
+}
+
+/*texto*/
+.texto-busca.expandir-texto{
+    color: var(--Dark-green, #084236);
+    opacity: 1;
+    transition: 0.2s;
+}
+
+/*pessoa side fechada*/
+.pessoa.expandir-pessoa{
+   opacity: 1;
+   transition: 0.2s;
+}
+
+.sair.expandir-pessoa{
+    margin: 18px 14px 18px 37px;
+    width: 24px;
+     height: 24px;
+    flex-shrink: 0;
+    transition: 0.2s;
+}
+
+/*logo*/
+.logo.expandir-logo{
+    opacity: 1;
+    margin-left: 0px;
+    transition: 0.2;
+}
+
+.btn-expandir.expandir-logo{
+    margin-left: 100px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.2;
+}
+
+/*--------------cx principal-----------*/
+.conteudo-principal{
+    margin: 18px;
+}
