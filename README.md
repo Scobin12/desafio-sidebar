@@ -9,7 +9,7 @@
 
 ## 🖥 Preview 
 
-https://github.com/Scobin12/desafio-sidebar/assets/57958764/284b452a-a243-4e08-b184-de8ca2d4b886
+https://github.com/Scobin12/desafio-sidebar/assets/57958764/7136312c-03ba-4dd0-aa82-3b60e6d08d57
 
 ---
 
